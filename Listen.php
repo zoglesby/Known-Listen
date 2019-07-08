@@ -16,9 +16,9 @@
 
             function getDescription()
             {
-                if (!empty($this->body)) return $this->body;
+                if (empty($this->body)) return '';
 
-                return '';
+                return $this->body;
             }
 
             function getListenAuthor()
